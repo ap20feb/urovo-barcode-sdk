@@ -1,4 +1,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.urovobarcodesdk">
+  <application>
+    <receiver
+      android:name="com.urovobarcodesdk.ScannerBroadcastReceiver"
+      android:enabled="true"
+      android:exported="true">
+      <intent-filter>
+        <action android:name="android.intent.ACTION_DECODE_DATA"/>
+      </intent-filter>
+    </receiver>
+  </application>
 
 </manifest>
