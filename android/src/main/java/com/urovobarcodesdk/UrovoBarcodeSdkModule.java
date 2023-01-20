@@ -9,12 +9,14 @@ import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
 import com.facebook.react.module.annotations.ReactModule;
 
-@ReactModule(name = UrovoBarcodeSdkModule.NAME)
 public class UrovoBarcodeSdkModule extends ReactContextBaseJavaModule {
   public static final String NAME = "UrovoBarcodeSdkModule";
 
+  public static ReactApplicationContext reactContext;
+
   public UrovoBarcodeSdkModule(ReactApplicationContext reactContext) {
     super(reactContext);
+    this.reactContext = reactContext;
   }
 
   @Override
