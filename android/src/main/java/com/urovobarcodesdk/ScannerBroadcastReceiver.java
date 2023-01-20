@@ -32,7 +32,7 @@ public class ScannerBroadcastReceiver extends BroadcastReceiver {
 
   private void sendEvent(String eventName, WritableMap map) {
     try{
-      ReactContext reactContext = RNAndroidBroadcastReceiverForScannerModule.reactContext;
+      ReactContext reactContext = UrovoBarcodeSdkModule.reactContext;
 
       reactContext.getJSModule(DeviceEventManagerModule.RCTDeviceEventEmitter.class)
         .emit(eventName, map);

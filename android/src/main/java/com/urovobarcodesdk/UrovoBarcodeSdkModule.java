@@ -1,6 +1,7 @@
 package com.urovobarcodesdk;
 
 import androidx.annotation.NonNull;
+import android.util.Log;
 
 import com.facebook.react.bridge.Promise;
 import com.facebook.react.bridge.ReactApplicationContext;
